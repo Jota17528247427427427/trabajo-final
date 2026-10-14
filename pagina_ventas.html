@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportStore - Ropa Deportiva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="contenedor-navbar">
+            <div class="contenedor-logo">
+                <img src="img/logo.jpeg" alt="logo">
+            </div>
+            <h1>SportStore </h1>
+            <nav>
+                <a href="#"> Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="carrusel">
+            <div class="contenedor-slide">
+                <div class="slide"> 
+                    <img src="img/c1.jpeg" alt="Banner 1">
+                </div>
+                <div class="slide"> 
+                    <img src="img/c2.jpeg" alt="Banner 2">
+                </div>
+                <div class="slide"> 
+                    <img src="img/c3.jpg" alt="Banner 3">
+                </div>
+                <div class="slide"> 
+                    <img src="img/c1.jpeg" alt="Banner 4">
+                </div>
+            </div>
+        </section>
+
+        <section class="inicio">
+            <h2>La mejor ropa sport y deportiva del Perú</h2>
+            <p>
+                Encuentra las mejores prendas deportivas de alta calidad, comodidad y diseño para entrenar o vestir casual.
+            </p>
+            <!-- CUADRADO/BOTÓN AGREGADO AQUÍ -->
+            <a href="#productos" class="btn-productos">Ver productos</a>
+        </section>
+
+        <section>
+            <h2 id="productos">Nuestros Productos</h2>
+
+            <div class="contenedor-productos">
+                <div class="card">
+                    <img src="img/images.jpeg" alt="Conjunto Deportivo">
+                    <h3>Conjunto Sport</h3>
+                    <p>Máxima comodidad al entrenar</p>
+                    <p class="precio">S/120.00</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/JBL.webp" alt="Zapatillas Running">
+                    <h3>Zapatillas Running</h3>
+                    <p>Amortiguación avanzada</p>
+                    <p class="precio">S/290.00</p>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/ptr.webp" alt="Casaca Deportiva">
+                    <h3>Casaca Térmica</h3>
+                    <p>Protección contra el frío</p>
+                    <p class="precio">S/150.00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-video">
+            <h2>Conoce Nuestros Productos</h2>
+            <p>
+                Descubre la gran variedad de indumentaria deportiva que tenemos para ti.
+            </p>
+            <div class="contenedor-video">
+                <video autoplay muted loop controls>
+                    <source src="img/ropadeport.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Contacto">
+        <p>SportStore &copy; 2026</p>
+    </footer>
+
+    <script>
+        console.log('Hola mundo desde la web sport!');
+    </script>
+</body>
+</html>

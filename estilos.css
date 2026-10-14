@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Arimo", sans-serif;
+            background-color: rgb(225, 232, 218);
+            color: #01438a;
+        }
+
+        header {
+            background-color: #0a192f;
+            color: rgb(151, 247, 213);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contenedor-navbar{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contenedor-logo img{
+            width: 160px;
+            height: auto;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .carrusel{
+            width: 100%;
+            height: 400px;
+            max-width: 1200px;
+            overflow: hidden;
+            margin: 30px auto;
+        }
+        .contenedor-slide{
+            display: flex;
+            width: 400%;
+            height: 100%;
+            animation: mover 12s infinite;
+        }
+
+        @keyframes mover{
+            0%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-25%);
+            }
+            45%{
+                transform: translateX(-25%);
+            }
+            50%{
+                transform: translateX(-50%);
+            } 
+            70%{
+                transform: translateX(-50%);
+            }
+            75%{
+                transform: translateX(-75%);
+            }
+             95%{
+                transform: translateX(-75%);
+            }
+             100%{
+                transform: translateX(0);
+            }
+        }
+        .slide{
+            width: 25%;
+            height: 100%;
+        }
+
+        .slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .inicio {
+            text-align: center;
+            background-color: #0a192f; /* Fondo oscuro similar al Banner */
+            color: #ffffff;
+            padding: 40px 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            border-radius: 12px;
+        }
+
+        .inicio h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .inicio p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #d1d5db;
+        }
+
+        /* CUADRADO / BOTÓN "VER PRODUCTOS" */
+        .btn-productos {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #f5f5dc; 
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-productos:hover {
+            background-color: #e2e2c5;
+        }
+
+        #productos {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #0a192f;
+        }
+
+        /* CONTENEDOR DE PRODUCTOS */
+        .contenedor-productos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 40px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 2px solid rgb(12, 5, 0);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: black;
+            margin-top: 10px;
+        }
+
+        .card p {
+            color: #346aac;
+            margin: 5px 0;
+        }
+
+        .precio {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card button {
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #0a192f;
+            border: none;
+            color: aliceblue;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .seccion-video{
+            max-width: 1000px;
+            margin: 60px auto 20px;
+            padding: 50px;
+            text-align: center;
+        }
+        .seccion-video h2{
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .seccion-video p{
+            margin-bottom: 25px;
+        }
+
+        .contenedor-video{
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenedor-video video{
+            width: 100%;
+            display: block;
+        }
+
+
+        footer{
+            background-color: #000000;
+            text-align: center;
+            padding: 50px;
+            margin: 30px;
+            color: white;
+        }
